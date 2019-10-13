@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "pen",
+        "quantity": 10,
+        "price": 10,
+        "descripition": "this is gel pen"
+    },
+    {
+        "id": 2,
+        "name": "mobile",
+        "quantity": 20,
+        "price": 10000,
+        "descripition": "all are 4g phone"
+    },
+    {
+        "id": 3,
+        "name": "laptop",
+        "quantity": 2,
+        "price": 100000,
+        "descripition": "all are 8g laptop"
+    }
+]

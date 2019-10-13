@@ -1,0 +1,162 @@
+{
+    "swagger": "2.0",
+    "info": {
+    "version": "1.0.0",
+    "description": "sample api login logout",
+    "title": "sample api"
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "schemes": [
+    "http"
+    ],
+    "paths": {
+    "/api/v1/product": {
+    "post": {
+    "description": "add the item ",
+    "parameters": [
+    {
+    "type": "string",
+    "description": "product details",
+    "name": "name of product",
+    "in": "formData",
+    "example": "pen"
+    },
+    {
+    "type": "number",
+    "description": "quantity",
+    "name": "quantity",
+    "in": "formData",
+    "example": "12345"
+    },
+    {
+        "type": "number",
+        "description": "price",
+        "name": "price",
+        "in": "formData",
+        "example": "12345"
+        },
+        {
+            "type": "string",
+            "description": "descripition",
+            "name": "descripition",
+            "in": "formData",
+            "example": "text"
+            }
+    ],
+    "responses": {
+    "200": {
+    "description" : "successfully added."
+    }
+    }
+    },
+    "post": {
+    "description": "get the created item in the file",
+    
+    "responses": {
+    "200": {
+    "description" : "response template render"
+    }
+    }
+    }
+    },
+    "/api/v1/product": {
+    "post": {
+    "description": "getting the created product",
+    "parameters": [
+    {
+    "type": "string",
+    "description": "name of product",
+    "name": "name",
+    "in": "formData"
+    },
+    {
+    "type": "number",
+    "description": "quantity",
+    "name": "quantity",
+    "in": "formData"
+    },
+    {
+        "type": "number",
+        "description": "price",
+        "name": "price",
+        "in": "formData",
+        "example": "12345"
+        },{
+            "type": "String",
+            "description": "descripition",
+            "name": "descripition",
+            "in": "formData",
+            "example": "text"
+            }
+    ],
+    "responses": {
+    "200": {
+    "description" : "successfully get in."
+    }
+    }
+    },
+    "get": {
+    "description": "get the product",
+    "responses": {
+    "200": {
+    "description": "response template render"
+    }
+    }
+    }
+    
+    },
+    "/api/v1/product/:id": {
+        "patch": {
+        "description": "update the item ",
+        "parameters": [
+        {
+        "type": "string",
+        "description": "product details",
+        "name": "name of product",
+        "in": "formData",
+        "example": "pen"
+        },
+        {
+        "type": "number",
+        "description": "quantity",
+        "name": "quantity",
+        "in": "formData",
+        "example": "12345"
+        },
+        {
+            "type": "number",
+            "description": "price",
+            "name": "price",
+            "in": "formData",
+            "example": "12345"
+            },
+            {
+                "type": "string",
+                "description": "descripition",
+                "name": "descripition",
+                "in": "formData",
+                "example": "text"
+                }
+        ],
+        "responses": {
+        "200": {
+        "description" : "successfully added."
+        }
+        }
+        },
+        "post": {
+        "description": "get the created item in the file",
+        
+        "responses": {
+        "200": {
+        "description" : "response template render"
+        }
+        }
+        }
+        }
+    
+    
+
+    }
+    }
